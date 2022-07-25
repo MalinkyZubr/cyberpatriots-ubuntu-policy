@@ -1,0 +1,1 @@
+To debug a bash program you should do bash -x before doing the run command
