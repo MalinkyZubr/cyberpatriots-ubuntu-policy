@@ -1,0 +1,29 @@
+List of things that n
+eed to be added to the policy:
+update and upgrade system
+User identification to remove unauthorized users from admin
+firewall activation ufw firewall
+turn off root in sshd_config
+no keepalive for unattended sessions shd
+disablke obsoilete rsh settings ignore ignorerhosts yes
+check sshd_config file for correctness sudo sshd -t
+lock root user password -l root
+change login chances to pass max days 90 p-ass min days 10 pass warn age 7
+echo 'auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800' >> /etc/pam.d/common-auth
+install libpam-cracklib
+set common password remember 5 minlen 8
+set ucredit=-1 lcredic=-1 dcredit=-1 ocredit=-1 in common password pam_cracklib
+set up auditing auditd and auditctl -e 1
+check for empty passwords
+remove all samba stuff ampt-get remove .*samba.* .*smb.* DONE
+remove all music DONE
+remove all tar.gz tgz zip and deb files. Remove all hacking tools DONE
+install bum for graphical interface nmap zenmap apache2 nginx lighttpd wireshark tcpdump netcat-traditional nikto ophcrack
+prevent ip spoofing in etc/host.conf
+disable firewire thunderbolt
+disable USB
+install fail2ban (last)
+install chkrootkit and rkhunter. Run services DONE
+disable telnet DONE
+secure IPP
+secure ftp, disable anonymous users
