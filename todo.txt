@@ -1,8 +1,8 @@
-List of things that n
-eed to be added to the policy:
-update and upgrade system
+List of things that 
+need to be added to the policy:
+update and upgrade system DONE
 User identification to remove unauthorized users from admin
-firewall activation ufw firewall
+firewall activation ufw firewall DONE
 turn off root in sshd_config
 no keepalive for unattended sessions shd
 disablke obsoilete rsh settings ignore ignorerhosts yes

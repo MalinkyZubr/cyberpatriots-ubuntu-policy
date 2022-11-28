@@ -30,7 +30,7 @@ service_path
 
 #service checks
 blacklisted=("nmap" "zenmap" "apache2" "nginx" "lighttpd" "wireshark" "tcpdump" "netcat-traditional" "nikto" "ophcrack" "libpam-pwquality" "telnet")
-whitelisted=("chkrootkit" "rkhunter" "ufw" "libpam-cracklib")
+whitelisted=("chkrootkit" "rkhunter" "ufw" "libpam-cracklib" "auditd" "auditctl")
 
 for service in "${blacklisted[@]}"
 do 
