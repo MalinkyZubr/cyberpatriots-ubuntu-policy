@@ -1,0 +1,36 @@
+Package: rkhunter
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 1081
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.4.6-10
+Depends: binutils, file, lsof, net-tools, ucf, debconf (>= 0.5) | debconf-2.0, perl:any
+Pre-Depends: debconf | debconf-2.0
+Recommends: bsd-mailx | mailutils | s-nail | mailx, default-mta | mail-transport-agent, e2fsprogs, iproute2, unhide, unhide.rb, wget | curl
+Suggests: liburi-perl, libwww-perl, powermgmt-base
+Conffiles:
+ /etc/apt/apt.conf.d/90rkhunter 662539eb1caa197e3cb9063186d207f4
+ /etc/cron.daily/rkhunter d223d17aa5d6b9c70145ce0c55f75e1b
+ /etc/cron.weekly/rkhunter 13da7eccf59ff1011d47bf854cb8334c
+ /etc/logcheck/ignore.d.server/rkhunter 6b6f43cfc660f206707930f94bf54a9c
+ /etc/logrotate.d/rkhunter c16a2282b8a5f0788678de0a1b2943c9
+ /etc/rkhunter.conf 8944b42c39ea946004aeee8ec7f33551
+Description: rootkit, backdoor, sniffer and exploit scanner
+ Rootkit Hunter scans systems for known and unknown rootkits,
+ backdoors, sniffers and exploits.
+ .
+ It checks for:
+  - SHA256 hash changes;
+  - files commonly created by rootkits;
+  - executables with anomalous file permissions;
+  - suspicious strings in kernel modules;
+  - hidden files in system directories;
+ and can optionally scan within files.
+ .
+ Using rkhunter alone does not guarantee that a system is not
+ compromised. Running additional tests, such as chkrootkit, is
+ recommended.
+Original-Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Homepage: http://rkhunter.sourceforge.net

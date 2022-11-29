@@ -1,0 +1,17 @@
+Package: libpam-cracklib
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pam
+Version: 1.4.0-11ubuntu2
+Replaces: libpam-modules (<< 1.1.0-3), libpam0g-cracklib
+Depends: libc6 (>= 2.14), libcrack2 (>= 2.8.12), libpam0g (>= 1.1.1), libpam-runtime (>= 1.0.1-6), cracklib-runtime, wamerican | wordlist
+Description: PAM module to enable cracklib support
+ This package includes libpam_cracklib, a PAM module that tests
+ passwords to make sure they are not too weak during password change.
+Homepage: http://www.linux-pam.org/
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
