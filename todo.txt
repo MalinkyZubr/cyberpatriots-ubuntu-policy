@@ -11,14 +11,14 @@ lock root user password -l root
 change login chances to pass max days 90 p-ass min days 10 pass warn age 7
 echo 'auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800' >> /etc/pam.d/common-auth
 install libpam-cracklib
-set common password remember 5 minlen 8
-set ucredit=-1 lcredic=-1 dcredit=-1 ocredit=-1 in common password pam_cracklib
+set common password remember=5 minlen=8 IN LOGIN DEFS
+set ucredit=-1 lcredic=-1 dcredit=-1 ocredit=-1 in common password pam_cracklib 
 set up auditing auditd and auditctl -e 1
 check for empty passwords
 remove all samba stuff ampt-get remove .*samba.* .*smb.* DONE
 remove all music DONE
 remove all tar.gz tgz zip and deb files. Remove all hacking tools DONE
-install bum for graphical interface nmap zenmap apache2 nginx lighttpd wireshark tcpdump netcat-traditional nikto ophcrack
+nmap zenmap apache2 nginx lighttpd wireshark tcpdump netcat-traditional nikto ophcrack DONE
 prevent ip spoofing in etc/host.conf
 disable firewire thunderbolt
 disable USB
