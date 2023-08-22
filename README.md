@@ -9,5 +9,8 @@ The program automates several workflows, including:
 * removal of potentially harmful programs
 * antivirus configuration and running
 
+### Usage
+To use the policy, run the policy scripts in the order of their names (P1 then P2). The scripts are separated because the system must be restarted after software installation. Respond to all text prompts and questions as they present themselves.
+
 ### Contributing
 * All members of JSerra cyberpatriots please contribute, there is much more that can be done with this program! 
