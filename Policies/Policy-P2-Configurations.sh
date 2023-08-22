@@ -29,5 +29,5 @@ sudo rkhunter --propupd
 sudo rkhunter -sk --checkall
 
 # managing libpam-cracklib
-#sudo sed '34 i password		required	pam_cracklib.so 	retry=3 minlen=6 difok=3' /etc/pam.d/common-password
-#sudo sed '35 i password required pam_unix.so md5 use_authtok' /etc/pam.d/common-password
+sudo sed '34 i password		required	pam_cracklib.so 	retry=3 minlen=6 difok=3' /etc/pam.d/common-password
+sudo sed '35 i password required pam_unix.so md5 use_authtok' /etc/pam.d/common-password
